@@ -11,6 +11,6 @@ for line in sys.stdin:
         form=form.lower()
     final.add((lemma,form,upos+"_"+utags))
 for l,f,t in sorted(final):
-    print(l,f,t)
+    print(l,f,t,sep="\t")
 
         

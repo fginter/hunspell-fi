@@ -1,2 +1,5 @@
-java -jar hunspell-builder/target/hunspell-builder-0.2-jar-with-dependencies.jar input.fi.txt spell-plugin/fi_FI
-
+cd prep-data
+zcat counts_min_3.raw.txt.gz | python3 filter.py | gzip > filtered_counts.txt.gz
+zcat filtered_counts.txt.gz | python3 prep_input.py > input.fi.txt
+cd ..
+java -jar hunspell-builder/target/hunspell-builder-0.2-jar-with-dependencies.jar prep-data/input.fi.txt spell-plugin/dictionaries/fi_FI
