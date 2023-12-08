@@ -8,6 +8,10 @@ As a stopgap solution, I built this best-effort dictionary using the following r
   2) [Voikko](https://voikko.puimula.org/) to filter this vocabulary down to correctly spelled forms.
   3) The [hunspell-builder](https://github.com/essential-data/hunspell-builder) program which was developed for the Slovak hunspell project, and which is capable of building a dictionary directly from a list of (baseform,wordform) pairs.
 
+# Download
+
+You can grab the latest version here: [https://github.com/fginter/hunspell-fi/releases/latest](https://github.com/fginter/hunspell-fi/releases/latest) The .xpi extension file is a regular zip file which includes the hunspell dictionaries (fi_FI.dic and fi_FI.aff). The extension can be directly installed to Thunderbird and Firefox.
+
 # Evaluation
 
 I am sorry, I have no time to properly evaluate this beyond "I am using it daily and it does fine for me". I suspect that it might be insufficient for a native Finn fine-tuning carefully crafted text, but it seems more than enough for a foreigner like me, struggling to decide between uutiset and uuttiset. :) One way or another, it is much, much better than nothing. :)
